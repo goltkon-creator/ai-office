@@ -72,14 +72,14 @@ function updateAgent(agentId, status, message) {
 
   card.className = `workstation ${status}`;
 
-  const badge = card.querySelector('.status-badge');
-  if (badge) {
-    badge.className = `status-badge ${status}`;
+  const statusEl = card.querySelector('.ws-status');
+  if (statusEl) {
+    statusEl.className = `ws-status ${status}`;
     const labels = { idle: 'ПРОСТОЙ', working: 'РАБОТАЕТ', done: 'ГОТОВО' };
-    badge.textContent = labels[status] || status;
+    statusEl.textContent = labels[status] || status;
   }
 
-  const msgEl = card.querySelector('.agent-msg');
+  const msgEl = card.querySelector('.ws-msg');
   if (msgEl && message) msgEl.textContent = message;
 }
 
@@ -88,7 +88,7 @@ function resetAgents() {
     updateAgent(id, 'idle', '');
     const card = document.getElementById(`agent-${id}`);
     if (card) {
-      const msg = card.querySelector('.agent-msg');
+      const msg = card.querySelector('.ws-msg');
       if (msg) msg.textContent = '';
     }
   });

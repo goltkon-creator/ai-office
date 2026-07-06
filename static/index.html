@@ -19,288 +19,293 @@
 
   <!-- ══ OFFICE ROOM ══ -->
   <div class="office">
-    <div class="office-wall">
-      <span class="room-label">▸ ГЛАВНЫЙ ОФИС · AI TEAM</span>
-    </div>
+    <div class="room">
 
-    <div class="office-floor">
-
-      <!-- ДИРЕКТОР -->
-      <div class="zone">
-        <div class="zone-label">ДИРЕКТОР</div>
-        <div class="desks-row">
-
-          <!-- Xenon -->
-          <div class="workstation" id="agent-xenon">
-            <div class="char">
-              <svg width="48" height="56" viewBox="0 0 48 56" style="image-rendering:pixelated">
-                <!-- shadow -->
-                <ellipse cx="24" cy="54" rx="16" ry="3" fill="rgba(0,0,0,0.3)"/>
-                <!-- legs -->
-                <rect x="16" y="44" width="6" height="10" fill="#3a2060"/>
-                <rect x="26" y="44" width="6" height="10" fill="#3a2060"/>
-                <!-- shoes -->
-                <rect x="14" y="52" width="8" height="4" fill="#1a1a1a"/>
-                <rect x="26" y="52" width="8" height="4" fill="#1a1a1a"/>
-                <!-- torso -->
-                <rect x="12" y="26" width="24" height="20" fill="#6c3fc5"/>
-                <!-- shirt detail -->
-                <rect x="16" y="28" width="16" height="14" fill="#7a4fd5"/>
-                <rect x="20" y="26" width="8" height="5" fill="#f5c08a"/>
-                <!-- tie -->
-                <rect x="22" y="30" width="4" height="10" fill="#ff4444"/>
-                <rect x="21" y="37" width="6" height="3" fill="#cc2222"/>
-                <!-- arms -->
-                <rect x="6" y="27" width="6" height="14" fill="#6c3fc5"/>
-                <rect x="36" y="27" width="6" height="14" fill="#6c3fc5"/>
-                <!-- hands -->
-                <rect x="5" y="39" width="8" height="5" fill="#f5c08a"/>
-                <rect x="35" y="39" width="8" height="5" fill="#f5c08a"/>
-                <!-- neck -->
-                <rect x="20" y="22" width="8" height="5" fill="#f5c08a"/>
-                <!-- head -->
-                <rect x="12" y="4" width="24" height="20" fill="#f5c08a"/>
-                <!-- hair -->
-                <rect x="12" y="4" width="24" height="6" fill="#6c3fc5"/>
-                <rect x="10" y="6" width="4" height="6" fill="#6c3fc5"/>
-                <rect x="34" y="6" width="4" height="6" fill="#6c3fc5"/>
-                <!-- eyes -->
-                <rect x="17" y="12" width="4" height="4" fill="#1a1a1a"/>
-                <rect x="27" y="12" width="4" height="4" fill="#1a1a1a"/>
-                <rect x="18" y="13" width="2" height="2" fill="#fff"/>
-                <rect x="28" y="13" width="2" height="2" fill="#fff"/>
-                <!-- mouth smile -->
-                <rect x="18" y="19" width="12" height="2" fill="#c97b5a"/>
-                <rect x="17" y="18" width="2" height="2" fill="#c97b5a"/>
-                <rect x="29" y="18" width="2" height="2" fill="#c97b5a"/>
-                <!-- crown/badge -->
-                <rect x="18" y="2" width="12" height="4" fill="#ffcc00"/>
-                <rect x="16" y="0" width="4" height="4" fill="#ffcc00"/>
-                <rect x="22" y="0" width="4" height="6" fill="#ffcc00"/>
-                <rect x="28" y="0" width="4" height="4" fill="#ffcc00"/>
-              </svg>
-            </div>
-            <div class="desk">
-              <div class="monitor">
-                <div class="screen">
-                  <div class="screen-line"></div>
-                  <div class="screen-line"></div>
-                  <div class="screen-line"></div>
-                  <div class="screen-cursor"></div>
-                </div>
-              </div>
-              <div class="monitor-stand"></div>
-              <div class="monitor-base"></div>
-              <div class="desk-mouse"></div>
-            </div>
-            <div class="nameplate">
-              <div class="nameplate-name">XENON</div>
-              <div class="nameplate-role">Директор · Оркестратор</div>
-            </div>
-            <div class="status-badge idle">ПРОСТОЙ</div>
-            <div class="agent-msg"></div>
+      <!-- TOP WALL with windows -->
+      <div class="room-top-wall">
+        <div class="wall-windows">
+          <div class="window-frame">
+            <div class="window-curtain-l"></div>
+            <div class="window-curtain-r"></div>
           </div>
-
-          <!-- Plant -->
-          <div style="display:flex;align-items:flex-end;padding-bottom:20px;margin-left:8px">
-            <div class="plant">
-              <div class="plant-leaves">🌿</div>
-              <div class="plant-leaves" style="font-size:22px;margin-top:-6px">🌱</div>
-              <div class="plant-pot"></div>
-            </div>
+          <div class="window-frame">
+            <div class="window-curtain-l"></div>
+            <div class="window-curtain-r"></div>
           </div>
-
+          <div class="window-frame">
+            <div class="window-curtain-l"></div>
+            <div class="window-curtain-r"></div>
+          </div>
         </div>
       </div>
 
-      <!-- КОМАНДА ЛЕНДИНГОВ -->
-      <div class="zone">
-        <div class="zone-label">КОМАНДА ЛЕНДИНГОВ</div>
-        <div class="desks-row">
+      <!-- ROOM BODY: left wall + floor + right wall -->
+      <div class="room-body">
+        <div class="wall-left"></div>
 
-          <!-- Copywriter -->
-          <div class="workstation" id="agent-copywriter">
-            <div class="char">
-              <svg width="44" height="52" viewBox="0 0 44 52" style="image-rendering:pixelated">
-                <ellipse cx="22" cy="50" rx="14" ry="2.5" fill="rgba(0,0,0,0.3)"/>
-                <rect x="14" y="40" width="5" height="9" fill="#1a4a7a"/>
-                <rect x="25" y="40" width="5" height="9" fill="#1a4a7a"/>
-                <rect x="12" y="48" width="7" height="3" fill="#111"/>
-                <rect x="25" y="48" width="7" height="3" fill="#111"/>
-                <rect x="10" y="23" width="24" height="19" fill="#3f8ac5"/>
-                <rect x="14" y="25" width="16" height="13" fill="#4f9ad5"/>
-                <rect x="19" y="23" width="6" height="4" fill="#f5c08a"/>
-                <rect x="4" y="24" width="6" height="12" fill="#3f8ac5"/>
-                <rect x="34" y="24" width="6" height="12" fill="#3f8ac5"/>
-                <rect x="3" y="34" width="7" height="4" fill="#f5c08a"/>
-                <rect x="34" y="34" width="7" height="4" fill="#f5c08a"/>
-                <rect x="18" y="19" width="8" height="5" fill="#f5c08a"/>
-                <rect x="10" y="3" width="24" height="18" fill="#f5c08a"/>
-                <rect x="10" y="3" width="24" height="5" fill="#1a3a6a"/>
-                <rect x="8" y="5" width="4" height="5" fill="#1a3a6a"/>
-                <rect x="32" y="5" width="4" height="5" fill="#1a3a6a"/>
-                <!-- glasses -->
-                <rect x="12" y="10" width="8" height="6" fill="none" stroke="#333" stroke-width="1"/>
-                <rect x="24" y="10" width="8" height="6" fill="none" stroke="#333" stroke-width="1"/>
-                <rect x="20" y="12" width="4" height="2" fill="#333"/>
-                <rect x="14" y="12" width="4" height="3" fill="#88aaff" opacity="0.3"/>
-                <rect x="26" y="12" width="4" height="3" fill="#88aaff" opacity="0.3"/>
-                <rect x="16" y="14" width="4" height="3" fill="#1a1a1a"/>
-                <rect x="26" y="14" width="4" height="3" fill="#1a1a1a"/>
-                <rect x="19" y="17" width="6" height="2" fill="#c97b5a"/>
-                <!-- pencil in hand -->
-                <rect x="3" y="32" width="2" height="8" fill="#ffdd44" transform="rotate(-20 4 36)"/>
-              </svg>
-            </div>
-            <div class="desk">
-              <div class="monitor">
-                <div class="screen">
-                  <div class="screen-line"></div>
-                  <div class="screen-line"></div>
-                  <div class="screen-line"></div>
-                  <div class="screen-cursor"></div>
+        <!-- FLOOR -->
+        <div class="floor">
+
+          <!-- === ДИРЕКТОР === -->
+          <div class="team-group">
+            <div class="team-badge">Директор · AI Office</div>
+            <div class="agents-row">
+
+              <!-- XENON -->
+              <div class="workstation" id="agent-xenon">
+                <div class="char-wrap">
+                  <!-- Pixel character SVG — RPG style, simple -->
+                  <svg width="32" height="40" viewBox="0 0 32 40" style="image-rendering:pixelated;display:block">
+                    <!-- shadow -->
+                    <ellipse cx="16" cy="39" rx="10" ry="2" fill="rgba(0,0,0,0.2)"/>
+                    <!-- legs -->
+                    <rect x="10" y="28" width="5" height="9" fill="#4a2a8a"/>
+                    <rect x="17" y="28" width="5" height="9" fill="#4a2a8a"/>
+                    <!-- shoes -->
+                    <rect x="9"  y="35" width="6" height="3" fill="#1a1a1a"/>
+                    <rect x="17" y="35" width="6" height="3" fill="#1a1a1a"/>
+                    <!-- torso -->
+                    <rect x="8" y="16" width="16" height="14" fill="#6c3fc5"/>
+                    <!-- collar white -->
+                    <rect x="13" y="16" width="6" height="4" fill="#f5c08a"/>
+                    <!-- tie -->
+                    <rect x="14" y="19" width="4" height="7" fill="#dd3333"/>
+                    <!-- arms -->
+                    <rect x="4"  y="17" width="4" height="9" fill="#6c3fc5"/>
+                    <rect x="24" y="17" width="4" height="9" fill="#6c3fc5"/>
+                    <!-- hands -->
+                    <rect x="3"  y="25" width="5" height="3" fill="#f5c08a"/>
+                    <rect x="24" y="25" width="5" height="3" fill="#f5c08a"/>
+                    <!-- neck -->
+                    <rect x="13" y="13" width="6" height="4" fill="#f5c08a"/>
+                    <!-- head -->
+                    <rect x="8" y="3" width="16" height="12" fill="#f5c08a"/>
+                    <!-- hair (purple) -->
+                    <rect x="8"  y="3" width="16" height="4" fill="#6c3fc5"/>
+                    <rect x="6"  y="5" width="3" height="4" fill="#6c3fc5"/>
+                    <rect x="23" y="5" width="3" height="4" fill="#6c3fc5"/>
+                    <!-- eyes -->
+                    <rect x="11" y="8"  width="3" height="3" fill="#1a1a1a"/>
+                    <rect x="18" y="8"  width="3" height="3" fill="#1a1a1a"/>
+                    <rect x="12" y="9"  width="1" height="1" fill="#fff"/>
+                    <rect x="19" y="9"  width="1" height="1" fill="#fff"/>
+                    <!-- mouth -->
+                    <rect x="12" y="13" width="8" height="1" fill="#c97b5a"/>
+                    <!-- crown -->
+                    <rect x="10" y="1" width="12" height="3" fill="#ffcc00"/>
+                    <rect x="10" y="0" width="3" height="2" fill="#ffcc00"/>
+                    <rect x="14" y="0" width="4" height="3" fill="#ffcc00"/>
+                    <rect x="19" y="0" width="3" height="2" fill="#ffcc00"/>
+                  </svg>
+                </div>
+                <div class="desk">
+                  <div class="desk-monitor">
+                    <div class="desk-screen">
+                      <div class="desk-screen-line"></div>
+                      <div class="desk-screen-line"></div>
+                      <div class="desk-screen-line"></div>
+                      <div class="desk-cursor"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ws-info">
+                  <span class="ws-name">XENON</span>
+                  <span class="ws-role">Директор · Оркестратор</span>
+                  <span class="ws-status idle">ПРОСТОЙ</span>
+                  <div class="ws-msg"></div>
                 </div>
               </div>
-              <div class="monitor-stand"></div>
-              <div class="monitor-base"></div>
-              <div class="desk-mouse"></div>
-            </div>
-            <div class="nameplate">
-              <div class="nameplate-name">КОПИРАЙТЕР</div>
-              <div class="nameplate-role">Текст · Заголовки · CTA</div>
-            </div>
-            <div class="status-badge idle">ПРОСТОЙ</div>
-            <div class="agent-msg"></div>
-          </div>
 
-          <!-- Structurer -->
-          <div class="workstation" id="agent-structurer">
-            <div class="char">
-              <svg width="44" height="52" viewBox="0 0 44 52" style="image-rendering:pixelated">
-                <ellipse cx="22" cy="50" rx="14" ry="2.5" fill="rgba(0,0,0,0.3)"/>
-                <rect x="14" y="40" width="5" height="9" fill="#6a1a3a"/>
-                <rect x="25" y="40" width="5" height="9" fill="#6a1a3a"/>
-                <rect x="12" y="48" width="7" height="3" fill="#111"/>
-                <rect x="25" y="48" width="7" height="3" fill="#111"/>
-                <rect x="10" y="23" width="24" height="19" fill="#c53f6c"/>
-                <rect x="14" y="25" width="16" height="13" fill="#d54f7c"/>
-                <rect x="19" y="23" width="6" height="4" fill="#f5c08a"/>
-                <rect x="4" y="24" width="6" height="12" fill="#c53f6c"/>
-                <rect x="34" y="24" width="6" height="12" fill="#c53f6c"/>
-                <rect x="3" y="34" width="7" height="4" fill="#f5c08a"/>
-                <rect x="34" y="34" width="7" height="4" fill="#f5c08a"/>
-                <rect x="18" y="19" width="8" height="5" fill="#f5c08a"/>
-                <rect x="10" y="3" width="24" height="18" fill="#f5c08a"/>
-                <rect x="10" y="3" width="24" height="5" fill="#7a1a3a"/>
-                <rect x="8" y="5" width="4" height="5" fill="#7a1a3a"/>
-                <rect x="32" y="5" width="4" height="5" fill="#7a1a3a"/>
-                <rect x="16" y="10" width="4" height="4" fill="#1a1a1a"/>
-                <rect x="26" y="10" width="4" height="4" fill="#1a1a1a"/>
-                <rect x="17" y="11" width="2" height="2" fill="#fff"/>
-                <rect x="27" y="11" width="2" height="2" fill="#fff"/>
-                <rect x="19" y="17" width="6" height="2" fill="#c97b5a"/>
-                <!-- ruler in hand -->
-                <rect x="35" y="28" width="10" height="3" fill="#ffee88" transform="rotate(10 40 30)"/>
-              </svg>
-            </div>
-            <div class="desk">
-              <div class="monitor">
-                <div class="screen">
-                  <div class="screen-line"></div>
-                  <div class="screen-line"></div>
-                  <div class="screen-line"></div>
-                  <div class="screen-cursor"></div>
+              <!-- Plant near director -->
+              <div style="align-self:flex-end;margin-bottom:10px;margin-left:4px">
+                <div class="pixel-plant">
+                  <div class="plant-top">🌿</div>
+                  <div class="plant-base"></div>
                 </div>
               </div>
-              <div class="monitor-stand"></div>
-              <div class="monitor-base"></div>
-              <div class="desk-mouse"></div>
+
             </div>
-            <div class="nameplate">
-              <div class="nameplate-name">СТРУКТУРАТОР</div>
-              <div class="nameplate-role">Блоки Tilda</div>
-            </div>
-            <div class="status-badge idle">ПРОСТОЙ</div>
-            <div class="agent-msg"></div>
           </div>
 
-          <!-- Finalizer -->
-          <div class="workstation" id="agent-finalizer">
-            <div class="char">
-              <svg width="44" height="52" viewBox="0 0 44 52" style="image-rendering:pixelated">
-                <ellipse cx="22" cy="50" rx="14" ry="2.5" fill="rgba(0,0,0,0.3)"/>
-                <rect x="14" y="40" width="5" height="9" fill="#1a6a3a"/>
-                <rect x="25" y="40" width="5" height="9" fill="#1a6a3a"/>
-                <rect x="12" y="48" width="7" height="3" fill="#111"/>
-                <rect x="25" y="48" width="7" height="3" fill="#111"/>
-                <rect x="10" y="23" width="24" height="19" fill="#3fc577"/>
-                <rect x="14" y="25" width="16" height="13" fill="#4fd587"/>
-                <rect x="19" y="23" width="6" height="4" fill="#f5c08a"/>
-                <rect x="4" y="24" width="6" height="12" fill="#3fc577"/>
-                <rect x="34" y="24" width="6" height="12" fill="#3fc577"/>
-                <rect x="3" y="34" width="7" height="4" fill="#f5c08a"/>
-                <rect x="34" y="34" width="7" height="4" fill="#f5c08a"/>
-                <rect x="18" y="19" width="8" height="5" fill="#f5c08a"/>
-                <rect x="10" y="3" width="24" height="18" fill="#f5c08a"/>
-                <rect x="10" y="3" width="24" height="5" fill="#1a6a3a"/>
-                <rect x="8" y="5" width="4" height="5" fill="#1a6a3a"/>
-                <rect x="32" y="5" width="4" height="5" fill="#1a6a3a"/>
-                <rect x="15" y="10" width="5" height="4" fill="#1a1a1a"/>
-                <rect x="26" y="10" width="5" height="4" fill="#1a1a1a"/>
-                <rect x="16" y="11" width="2" height="2" fill="#fff"/>
-                <rect x="27" y="11" width="2" height="2" fill="#fff"/>
-                <!-- big smile -->
-                <rect x="17" y="17" width="10" height="2" fill="#c97b5a"/>
-                <rect x="16" y="15" width="2" height="3" fill="#c97b5a"/>
-                <rect x="27" y="15" width="2" height="3" fill="#c97b5a"/>
-                <!-- checkmark on shirt -->
-                <rect x="19" y="29" width="3" height="6" fill="#00aa44" transform="rotate(45 20 32)"/>
-                <rect x="15" y="33" width="6" height="3" fill="#00aa44" transform="rotate(45 18 34)"/>
-              </svg>
-            </div>
-            <div class="desk">
-              <div class="monitor">
-                <div class="screen">
-                  <div class="screen-line"></div>
-                  <div class="screen-line"></div>
-                  <div class="screen-line"></div>
-                  <div class="screen-cursor"></div>
+          <!-- === КОМАНДА ЛЕНДИНГОВ === -->
+          <div class="team-group">
+            <div class="team-badge">Команда Лендингов</div>
+            <div class="agents-row">
+
+              <!-- COPYWRITER -->
+              <div class="workstation" id="agent-copywriter">
+                <div class="char-wrap">
+                  <svg width="32" height="40" viewBox="0 0 32 40" style="image-rendering:pixelated;display:block">
+                    <ellipse cx="16" cy="39" rx="10" ry="2" fill="rgba(0,0,0,0.2)"/>
+                    <rect x="10" y="28" width="5" height="9" fill="#1a3a7a"/>
+                    <rect x="17" y="28" width="5" height="9" fill="#1a3a7a"/>
+                    <rect x="9"  y="35" width="6" height="3" fill="#1a1a1a"/>
+                    <rect x="17" y="35" width="6" height="3" fill="#1a1a1a"/>
+                    <rect x="8" y="16" width="16" height="14" fill="#3f8ac5"/>
+                    <rect x="13" y="16" width="6" height="4" fill="#f5c08a"/>
+                    <rect x="4"  y="17" width="4" height="9" fill="#3f8ac5"/>
+                    <rect x="24" y="17" width="4" height="9" fill="#3f8ac5"/>
+                    <rect x="3"  y="25" width="5" height="3" fill="#f5c08a"/>
+                    <rect x="24" y="25" width="5" height="3" fill="#f5c08a"/>
+                    <rect x="13" y="13" width="6" height="4" fill="#f5c08a"/>
+                    <rect x="8" y="3" width="16" height="12" fill="#f5c08a"/>
+                    <rect x="8"  y="3" width="16" height="4" fill="#1a3a7a"/>
+                    <rect x="6"  y="5" width="3" height="4" fill="#1a3a7a"/>
+                    <rect x="23" y="5" width="3" height="4" fill="#1a3a7a"/>
+                    <!-- glasses -->
+                    <rect x="10" y="7" width="5" height="4" fill="none" stroke="#333" stroke-width="1"/>
+                    <rect x="17" y="7" width="5" height="4" fill="none" stroke="#333" stroke-width="1"/>
+                    <rect x="15" y="9" width="2" height="1" fill="#333"/>
+                    <rect x="11" y="8" width="3" height="2" fill="#aaccff" opacity="0.5"/>
+                    <rect x="18" y="8" width="3" height="2" fill="#aaccff" opacity="0.5"/>
+                    <rect x="11" y="9" width="3" height="2" fill="#1a1a1a"/>
+                    <rect x="18" y="9" width="3" height="2" fill="#1a1a1a"/>
+                    <rect x="12" y="13" width="8" height="1" fill="#c97b5a"/>
+                  </svg>
+                </div>
+                <div class="desk">
+                  <div class="desk-monitor">
+                    <div class="desk-screen">
+                      <div class="desk-screen-line"></div>
+                      <div class="desk-screen-line"></div>
+                      <div class="desk-screen-line"></div>
+                      <div class="desk-cursor"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ws-info">
+                  <span class="ws-name">КОПИРАЙТЕР</span>
+                  <span class="ws-role">Текст · Заголовки · CTA</span>
+                  <span class="ws-status idle">ПРОСТОЙ</span>
+                  <div class="ws-msg"></div>
                 </div>
               </div>
-              <div class="monitor-stand"></div>
-              <div class="monitor-base"></div>
-              <div class="desk-mouse"></div>
+
+              <!-- STRUCTURER -->
+              <div class="workstation" id="agent-structurer">
+                <div class="char-wrap">
+                  <svg width="32" height="40" viewBox="0 0 32 40" style="image-rendering:pixelated;display:block">
+                    <ellipse cx="16" cy="39" rx="10" ry="2" fill="rgba(0,0,0,0.2)"/>
+                    <rect x="10" y="28" width="5" height="9" fill="#7a1a3a"/>
+                    <rect x="17" y="28" width="5" height="9" fill="#7a1a3a"/>
+                    <rect x="9"  y="35" width="6" height="3" fill="#1a1a1a"/>
+                    <rect x="17" y="35" width="6" height="3" fill="#1a1a1a"/>
+                    <rect x="8" y="16" width="16" height="14" fill="#c53f6c"/>
+                    <rect x="13" y="16" width="6" height="4" fill="#f5c08a"/>
+                    <rect x="4"  y="17" width="4" height="9" fill="#c53f6c"/>
+                    <rect x="24" y="17" width="4" height="9" fill="#c53f6c"/>
+                    <rect x="3"  y="25" width="5" height="3" fill="#f5c08a"/>
+                    <rect x="24" y="25" width="5" height="3" fill="#f5c08a"/>
+                    <rect x="13" y="13" width="6" height="4" fill="#f5c08a"/>
+                    <rect x="8" y="3" width="16" height="12" fill="#f5c08a"/>
+                    <rect x="8"  y="3" width="16" height="4" fill="#7a1a3a"/>
+                    <rect x="6"  y="5" width="3" height="4" fill="#7a1a3a"/>
+                    <rect x="23" y="5" width="3" height="4" fill="#7a1a3a"/>
+                    <rect x="11" y="8"  width="3" height="3" fill="#1a1a1a"/>
+                    <rect x="18" y="8"  width="3" height="3" fill="#1a1a1a"/>
+                    <rect x="12" y="9"  width="1" height="1" fill="#fff"/>
+                    <rect x="19" y="9"  width="1" height="1" fill="#fff"/>
+                    <rect x="12" y="13" width="8" height="1" fill="#c97b5a"/>
+                  </svg>
+                </div>
+                <div class="desk">
+                  <div class="desk-monitor">
+                    <div class="desk-screen">
+                      <div class="desk-screen-line"></div>
+                      <div class="desk-screen-line"></div>
+                      <div class="desk-screen-line"></div>
+                      <div class="desk-cursor"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ws-info">
+                  <span class="ws-name">СТРУКТУРАТОР</span>
+                  <span class="ws-role">Блоки Tilda</span>
+                  <span class="ws-status idle">ПРОСТОЙ</span>
+                  <div class="ws-msg"></div>
+                </div>
+              </div>
+
+              <!-- FINALIZER -->
+              <div class="workstation" id="agent-finalizer">
+                <div class="char-wrap">
+                  <svg width="32" height="40" viewBox="0 0 32 40" style="image-rendering:pixelated;display:block">
+                    <ellipse cx="16" cy="39" rx="10" ry="2" fill="rgba(0,0,0,0.2)"/>
+                    <rect x="10" y="28" width="5" height="9" fill="#1a6a3a"/>
+                    <rect x="17" y="28" width="5" height="9" fill="#1a6a3a"/>
+                    <rect x="9"  y="35" width="6" height="3" fill="#1a1a1a"/>
+                    <rect x="17" y="35" width="6" height="3" fill="#1a1a1a"/>
+                    <rect x="8" y="16" width="16" height="14" fill="#3fc577"/>
+                    <rect x="13" y="16" width="6" height="4" fill="#f5c08a"/>
+                    <rect x="4"  y="17" width="4" height="9" fill="#3fc577"/>
+                    <rect x="24" y="17" width="4" height="9" fill="#3fc577"/>
+                    <rect x="3"  y="25" width="5" height="3" fill="#f5c08a"/>
+                    <rect x="24" y="25" width="5" height="3" fill="#f5c08a"/>
+                    <rect x="13" y="13" width="6" height="4" fill="#f5c08a"/>
+                    <rect x="8" y="3" width="16" height="12" fill="#f5c08a"/>
+                    <rect x="8"  y="3" width="16" height="4" fill="#1a6a3a"/>
+                    <rect x="6"  y="5" width="3" height="4" fill="#1a6a3a"/>
+                    <rect x="23" y="5" width="3" height="4" fill="#1a6a3a"/>
+                    <rect x="11" y="8"  width="3" height="3" fill="#1a1a1a"/>
+                    <rect x="18" y="8"  width="3" height="3" fill="#1a1a1a"/>
+                    <rect x="12" y="9"  width="1" height="1" fill="#fff"/>
+                    <rect x="19" y="9"  width="1" height="1" fill="#fff"/>
+                    <!-- big smile -->
+                    <rect x="11" y="12" width="10" height="1" fill="#c97b5a"/>
+                    <rect x="11" y="11" width="2"  height="2" fill="#c97b5a"/>
+                    <rect x="19" y="11" width="2"  height="2" fill="#c97b5a"/>
+                  </svg>
+                </div>
+                <div class="desk">
+                  <div class="desk-monitor">
+                    <div class="desk-screen">
+                      <div class="desk-screen-line"></div>
+                      <div class="desk-screen-line"></div>
+                      <div class="desk-screen-line"></div>
+                      <div class="desk-cursor"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ws-info">
+                  <span class="ws-name">ФИНАЛИЗАТОР</span>
+                  <span class="ws-role">Сборка · Инструкция</span>
+                  <span class="ws-status idle">ПРОСТОЙ</span>
+                  <div class="ws-msg"></div>
+                </div>
+              </div>
+
+              <!-- Plants -->
+              <div style="align-self:flex-end;margin-bottom:10px;margin-left:8px">
+                <div class="pixel-plant">
+                  <div class="plant-top">🌱</div>
+                  <div class="plant-base"></div>
+                </div>
+              </div>
+              <div style="align-self:flex-end;margin-bottom:10px">
+                <div class="pixel-plant">
+                  <div class="plant-top" style="font-size:24px">🌴</div>
+                  <div class="plant-base"></div>
+                </div>
+              </div>
+
             </div>
-            <div class="nameplate">
-              <div class="nameplate-name">ФИНАЛИЗАТОР</div>
-              <div class="nameplate-role">Сборка · Инструкция</div>
-            </div>
-            <div class="status-badge idle">ПРОСТОЙ</div>
-            <div class="agent-msg"></div>
           </div>
 
-          <!-- Plant -->
-          <div style="display:flex;align-items:flex-end;padding-bottom:20px;margin-left:8px">
-            <div class="plant">
-              <div class="plant-leaves" style="font-size:24px">🌴</div>
-              <div class="plant-pot"></div>
-            </div>
-          </div>
+        </div><!-- /floor -->
 
-        </div>
-      </div>
+        <div class="wall-right"></div>
+      </div><!-- /room-body -->
 
-    </div><!-- /office-floor -->
+      <div class="room-bottom-wall"></div>
+    </div><!-- /room -->
   </div><!-- /office -->
 
   <!-- ══ SIDE PANEL ══ -->
   <div class="side-panel">
-
     <div class="panel-section">
       <div class="panel-title">► НОВАЯ ЗАДАЧА</div>
       <textarea id="brief-input"
-        placeholder="Введи бриф на лендинг...&#10;&#10;Например: студия йоги в Москве, ЦА — женщины 25-40, цель — запись на пробное занятие."
-      ></textarea>
+        placeholder="Введи бриф на лендинг...&#10;&#10;Например: студия йоги, ЦА — женщины 25-40, цель — запись на пробное."></textarea>
       <div class="hint">Ctrl+Enter — отправить</div>
       <button class="btn" id="send-btn">▶ ЗАПУСТИТЬ КОМАНДУ</button>
     </div>
@@ -314,7 +319,6 @@
     <div class="tab-content active" id="tab-log">
       <div class="log-wrap" id="log-wrap"></div>
     </div>
-
     <div class="tab-content" id="tab-result">
       <div class="result-actions">
         <button class="btn-copy" id="copy-btn">КОПИРОВАТЬ</button>
@@ -323,14 +327,12 @@
         <pre class="result-content" id="result-content"></pre>
       </div>
     </div>
-
     <div class="tab-content" id="tab-history">
       <div class="history-scroll">
         <div id="history-list"></div>
       </div>
     </div>
-
-  </div><!-- /side-panel -->
+  </div>
 
 </div><!-- /layout -->
 
