@@ -70,20 +70,27 @@ function updateAgent(agentId, status, message) {
   const card = document.getElementById(`agent-${agentId}`);
   if (!card) return;
 
-  card.className = `agent-card agent-${agentId} ${status}`;
+  card.className = `workstation ${status}`;
 
-  const statusEl = card.querySelector('.agent-status');
-  statusEl.className = `agent-status ${status}`;
-  const labels = { idle: 'ПРОСТОЙ', working: 'РАБОТАЕТ', done: 'ГОТОВО' };
-  statusEl.textContent = labels[status] || status;
+  const badge = card.querySelector('.status-badge');
+  if (badge) {
+    badge.className = `status-badge ${status}`;
+    const labels = { idle: 'ПРОСТОЙ', working: 'РАБОТАЕТ', done: 'ГОТОВО' };
+    badge.textContent = labels[status] || status;
+  }
 
   const msgEl = card.querySelector('.agent-msg');
-  if (message) msgEl.textContent = message;
+  if (msgEl && message) msgEl.textContent = message;
 }
 
 function resetAgents() {
   Object.keys(AGENTS).forEach(id => {
     updateAgent(id, 'idle', '');
+    const card = document.getElementById(`agent-${id}`);
+    if (card) {
+      const msg = card.querySelector('.agent-msg');
+      if (msg) msg.textContent = '';
+    }
   });
 }
 
