@@ -154,7 +154,7 @@ header h1 {
   background-size: 32px 32px;
   padding: 24px 20px 32px;
   position: relative;
-  min-height: 480px;
+  min-height: 560px;
   display: flex;
   flex-direction: column;
   gap: 36px;
@@ -166,6 +166,52 @@ header h1 {
   background: #5c2020;
   border-top: 4px solid #3d1010;
   flex-shrink: 0;
+}
+
+/* ── XENON — центр комнаты ── */
+.xenon-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.xenon-label {
+  font-size: 7px;
+  color: #6c3fc5;
+  letter-spacing: 2px;
+  background: rgba(108,63,197,0.15);
+  border: 1px solid #6c3fc5;
+  padding: 2px 8px;
+  margin-top: 5px;
+  text-shadow: 0 0 6px #6c3fc5;
+}
+.xenon-role {
+  font-size: 5px;
+  color: #888;
+  margin-top: 3px;
+}
+.xenon-center .ws-status {
+  margin-top: 4px;
+}
+.xenon-center .ws-msg {
+  max-width: 100px;
+  margin-top: 3px;
+}
+
+/* ── DECOR CORNER ── */
+.decor-corner {
+  position: absolute;
+  bottom: 32px;
+  right: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 
 /* ── TEAM GROUP ── */

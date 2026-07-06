@@ -70,12 +70,30 @@ function updateAgent(agentId, status, message) {
   const card = document.getElementById(`agent-${agentId}`);
   if (!card) return;
 
+  const labels = { idle: 'ПРОСТОЙ', working: 'РАБОТАЕТ', done: 'ГОТОВО' };
+
+  // Xenon is positioned differently — no .workstation wrapper
+  if (agentId === 'xenon') {
+    const statusEl = document.getElementById('xenon-status');
+    if (statusEl) {
+      statusEl.className = `ws-status ${status}`;
+      statusEl.textContent = labels[status] || status;
+    }
+    const msgEl = document.getElementById('xenon-msg');
+    if (msgEl && message) msgEl.textContent = message;
+    // Animate character bob when working
+    const svg = card.querySelector('svg');
+    if (svg) {
+      svg.style.animation = status === 'working' ? 'char-bob 0.7s ease-in-out infinite' : '';
+    }
+    return;
+  }
+
   card.className = `workstation ${status}`;
 
   const statusEl = card.querySelector('.ws-status');
   if (statusEl) {
     statusEl.className = `ws-status ${status}`;
-    const labels = { idle: 'ПРОСТОЙ', working: 'РАБОТАЕТ', done: 'ГОТОВО' };
     statusEl.textContent = labels[status] || status;
   }
 
@@ -86,10 +104,15 @@ function updateAgent(agentId, status, message) {
 function resetAgents() {
   Object.keys(AGENTS).forEach(id => {
     updateAgent(id, 'idle', '');
-    const card = document.getElementById(`agent-${id}`);
-    if (card) {
-      const msg = card.querySelector('.ws-msg');
-      if (msg) msg.textContent = '';
+    if (id === 'xenon') {
+      const msgEl = document.getElementById('xenon-msg');
+      if (msgEl) msgEl.textContent = '';
+    } else {
+      const card = document.getElementById(`agent-${id}`);
+      if (card) {
+        const msg = card.querySelector('.ws-msg');
+        if (msg) msg.textContent = '';
+      }
     }
   });
 }

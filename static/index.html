@@ -46,88 +46,43 @@
         <!-- FLOOR -->
         <div class="floor">
 
-          <!-- === ДИРЕКТОР === -->
-          <div class="team-group">
-            <div class="team-badge">Директор · AI Office</div>
-            <div class="agents-row">
-
-              <!-- XENON -->
-              <div class="workstation" id="agent-xenon">
-                <div class="char-wrap">
-                  <!-- Pixel character SVG — RPG style, simple -->
-                  <svg width="32" height="40" viewBox="0 0 32 40" style="image-rendering:pixelated;display:block">
-                    <!-- shadow -->
-                    <ellipse cx="16" cy="39" rx="10" ry="2" fill="rgba(0,0,0,0.2)"/>
-                    <!-- legs -->
-                    <rect x="10" y="28" width="5" height="9" fill="#4a2a8a"/>
-                    <rect x="17" y="28" width="5" height="9" fill="#4a2a8a"/>
-                    <!-- shoes -->
-                    <rect x="9"  y="35" width="6" height="3" fill="#1a1a1a"/>
-                    <rect x="17" y="35" width="6" height="3" fill="#1a1a1a"/>
-                    <!-- torso -->
-                    <rect x="8" y="16" width="16" height="14" fill="#6c3fc5"/>
-                    <!-- collar white -->
-                    <rect x="13" y="16" width="6" height="4" fill="#f5c08a"/>
-                    <!-- tie -->
-                    <rect x="14" y="19" width="4" height="7" fill="#dd3333"/>
-                    <!-- arms -->
-                    <rect x="4"  y="17" width="4" height="9" fill="#6c3fc5"/>
-                    <rect x="24" y="17" width="4" height="9" fill="#6c3fc5"/>
-                    <!-- hands -->
-                    <rect x="3"  y="25" width="5" height="3" fill="#f5c08a"/>
-                    <rect x="24" y="25" width="5" height="3" fill="#f5c08a"/>
-                    <!-- neck -->
-                    <rect x="13" y="13" width="6" height="4" fill="#f5c08a"/>
-                    <!-- head -->
-                    <rect x="8" y="3" width="16" height="12" fill="#f5c08a"/>
-                    <!-- hair (purple) -->
-                    <rect x="8"  y="3" width="16" height="4" fill="#6c3fc5"/>
-                    <rect x="6"  y="5" width="3" height="4" fill="#6c3fc5"/>
-                    <rect x="23" y="5" width="3" height="4" fill="#6c3fc5"/>
-                    <!-- eyes -->
-                    <rect x="11" y="8"  width="3" height="3" fill="#1a1a1a"/>
-                    <rect x="18" y="8"  width="3" height="3" fill="#1a1a1a"/>
-                    <rect x="12" y="9"  width="1" height="1" fill="#fff"/>
-                    <rect x="19" y="9"  width="1" height="1" fill="#fff"/>
-                    <!-- mouth -->
-                    <rect x="12" y="13" width="8" height="1" fill="#c97b5a"/>
-                    <!-- crown -->
-                    <rect x="10" y="1" width="12" height="3" fill="#ffcc00"/>
-                    <rect x="10" y="0" width="3" height="2" fill="#ffcc00"/>
-                    <rect x="14" y="0" width="4" height="3" fill="#ffcc00"/>
-                    <rect x="19" y="0" width="3" height="2" fill="#ffcc00"/>
-                  </svg>
-                </div>
-                <div class="desk">
-                  <div class="desk-monitor">
-                    <div class="desk-screen">
-                      <div class="desk-screen-line"></div>
-                      <div class="desk-screen-line"></div>
-                      <div class="desk-screen-line"></div>
-                      <div class="desk-cursor"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="ws-info">
-                  <span class="ws-name">XENON</span>
-                  <span class="ws-role">Директор · Оркестратор</span>
-                  <span class="ws-status idle">ПРОСТОЙ</span>
-                  <div class="ws-msg"></div>
-                </div>
-              </div>
-
-              <!-- Plant near director -->
-              <div style="align-self:flex-end;margin-bottom:10px;margin-left:4px">
-                <div class="pixel-plant">
-                  <div class="plant-top">🌿</div>
-                  <div class="plant-base"></div>
-                </div>
-              </div>
-
-            </div>
+          <!-- ══ XENON — CENTER OF ROOM ══ -->
+          <div class="xenon-center" id="agent-xenon">
+            <svg width="40" height="50" viewBox="0 0 32 40" style="image-rendering:pixelated;display:block;margin:0 auto">
+              <ellipse cx="16" cy="39" rx="10" ry="2" fill="rgba(0,0,0,0.25)"/>
+              <rect x="10" y="28" width="5" height="9" fill="#4a2a8a"/>
+              <rect x="17" y="28" width="5" height="9" fill="#4a2a8a"/>
+              <rect x="9"  y="35" width="6" height="3" fill="#1a1a1a"/>
+              <rect x="17" y="35" width="6" height="3" fill="#1a1a1a"/>
+              <rect x="8" y="16" width="16" height="14" fill="#6c3fc5"/>
+              <rect x="13" y="16" width="6" height="4" fill="#f5c08a"/>
+              <rect x="14" y="19" width="4" height="7" fill="#dd3333"/>
+              <rect x="4"  y="17" width="4" height="9" fill="#6c3fc5"/>
+              <rect x="24" y="17" width="4" height="9" fill="#6c3fc5"/>
+              <rect x="3"  y="25" width="5" height="3" fill="#f5c08a"/>
+              <rect x="24" y="25" width="5" height="3" fill="#f5c08a"/>
+              <rect x="13" y="13" width="6" height="4" fill="#f5c08a"/>
+              <rect x="8" y="3" width="16" height="12" fill="#f5c08a"/>
+              <rect x="8"  y="3" width="16" height="4" fill="#6c3fc5"/>
+              <rect x="6"  y="5" width="3" height="4" fill="#6c3fc5"/>
+              <rect x="23" y="5" width="3" height="4" fill="#6c3fc5"/>
+              <rect x="11" y="8"  width="3" height="3" fill="#1a1a1a"/>
+              <rect x="18" y="8"  width="3" height="3" fill="#1a1a1a"/>
+              <rect x="12" y="9"  width="1" height="1" fill="#fff"/>
+              <rect x="19" y="9"  width="1" height="1" fill="#fff"/>
+              <rect x="12" y="13" width="8" height="1" fill="#c97b5a"/>
+              <rect x="10" y="1" width="12" height="3" fill="#ffcc00"/>
+              <rect x="10" y="0" width="3" height="2" fill="#ffcc00"/>
+              <rect x="14" y="0" width="4" height="3" fill="#ffcc00"/>
+              <rect x="19" y="0" width="3" height="2" fill="#ffcc00"/>
+            </svg>
+            <div class="xenon-label">XENON</div>
+            <div class="xenon-role">Оркестратор</div>
+            <div class="ws-status idle" id="xenon-status">ПРОСТОЙ</div>
+            <div class="ws-msg" id="xenon-msg"></div>
           </div>
 
-          <!-- === КОМАНДА ЛЕНДИНГОВ === -->
+          <!-- ══ КОМАНДА ЛЕНДИНГОВ — LEFT ══ -->
           <div class="team-group">
             <div class="team-badge">Команда Лендингов</div>
             <div class="agents-row">
@@ -152,7 +107,6 @@
                     <rect x="8"  y="3" width="16" height="4" fill="#1a3a7a"/>
                     <rect x="6"  y="5" width="3" height="4" fill="#1a3a7a"/>
                     <rect x="23" y="5" width="3" height="4" fill="#1a3a7a"/>
-                    <!-- glasses -->
                     <rect x="10" y="7" width="5" height="4" fill="none" stroke="#333" stroke-width="1"/>
                     <rect x="17" y="7" width="5" height="4" fill="none" stroke="#333" stroke-width="1"/>
                     <rect x="15" y="9" width="2" height="1" fill="#333"/>
@@ -175,7 +129,7 @@
                 </div>
                 <div class="ws-info">
                   <span class="ws-name">КОПИРАЙТЕР</span>
-                  <span class="ws-role">Текст · Заголовки · CTA</span>
+                  <span class="ws-role">Текст · Заголовки</span>
                   <span class="ws-status idle">ПРОСТОЙ</span>
                   <div class="ws-msg"></div>
                 </div>
@@ -250,7 +204,6 @@
                     <rect x="18" y="8"  width="3" height="3" fill="#1a1a1a"/>
                     <rect x="12" y="9"  width="1" height="1" fill="#fff"/>
                     <rect x="19" y="9"  width="1" height="1" fill="#fff"/>
-                    <!-- big smile -->
                     <rect x="11" y="12" width="10" height="1" fill="#c97b5a"/>
                     <rect x="11" y="11" width="2"  height="2" fill="#c97b5a"/>
                     <rect x="19" y="11" width="2"  height="2" fill="#c97b5a"/>
@@ -268,26 +221,24 @@
                 </div>
                 <div class="ws-info">
                   <span class="ws-name">ФИНАЛИЗАТОР</span>
-                  <span class="ws-role">Сборка · Инструкция</span>
+                  <span class="ws-role">Сборка · Итог</span>
                   <span class="ws-status idle">ПРОСТОЙ</span>
                   <div class="ws-msg"></div>
                 </div>
               </div>
 
-              <!-- Plants -->
-              <div style="align-self:flex-end;margin-bottom:10px;margin-left:8px">
-                <div class="pixel-plant">
-                  <div class="plant-top">🌱</div>
-                  <div class="plant-base"></div>
-                </div>
-              </div>
-              <div style="align-self:flex-end;margin-bottom:10px">
-                <div class="pixel-plant">
-                  <div class="plant-top" style="font-size:24px">🌴</div>
-                  <div class="plant-base"></div>
-                </div>
-              </div>
+            </div>
+          </div>
 
+          <!-- ══ ДЕКОР — правый угол ══ -->
+          <div class="decor-corner">
+            <div class="pixel-plant">
+              <div class="plant-top" style="font-size:28px">🌴</div>
+              <div class="plant-base"></div>
+            </div>
+            <div class="pixel-plant" style="margin-top:20px">
+              <div class="plant-top" style="font-size:18px">🌿</div>
+              <div class="plant-base"></div>
             </div>
           </div>
 
