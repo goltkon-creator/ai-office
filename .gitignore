@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+office.db
+*.db
+.DS_Store

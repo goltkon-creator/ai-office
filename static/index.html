@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI OFFICE</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>⚡ AI OFFICE</h1>
+    <span class="header-tag">v1.0</span>
+    <span class="header-tag">АГЕНТНАЯ СИСТЕМА</span>
+    <span class="header-tag">LANDERS → TILDA</span>
+  </header>
+
+  <div class="layout">
+
+    <!-- OFFICE FLOOR -->
+    <div class="office">
+      <div>
+        <div class="office-label">► ДИРЕКТОР</div>
+        <div class="agent-grid" style="grid-template-columns: 1fr;">
+          <!-- Xenon -->
+          <div class="agent-card agent-xenon" id="agent-xenon">
+            <div class="agent-sprite">
+              <svg viewBox="0 0 48 48" width="48" height="48" style="image-rendering:pixelated">
+                <!-- head -->
+                <rect x="12" y="2" width="24" height="20" fill="#f5c08a"/>
+                <rect x="14" y="4" width="20" height="16" fill="#f5c08a"/>
+                <!-- eyes -->
+                <rect x="16" y="8" width="4" height="4" fill="#222"/>
+                <rect x="28" y="8" width="4" height="4" fill="#222"/>
+                <!-- mouth -->
+                <rect x="18" y="16" width="12" height="2" fill="#c97"/>
+                <!-- hair -->
+                <rect x="12" y="2" width="24" height="4" fill="#6c3fc5"/>
+                <!-- torso -->
+                <rect x="10" y="24" width="28" height="18" fill="#6c3fc5"/>
+                <rect x="14" y="26" width="20" height="12" fill="#7c4fd5"/>
+                <!-- collar -->
+                <rect x="20" y="24" width="8" height="4" fill="#f5c08a"/>
+              </svg>
+            </div>
+            <div class="agent-name">XENON</div>
+            <div class="agent-role">Директор · Оркестратор</div>
+            <div class="agent-monitor">
+              <div class="monitor-screen">
+                <div class="monitor-dot"></div>
+              </div>
+            </div>
+            <div class="agent-status idle">ПРОСТОЙ</div>
+            <div class="agent-msg"></div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="office-label">► КОМАНДА ЛЕНДИНГОВ</div>
+        <div class="agent-grid">
+
+          <!-- Copywriter -->
+          <div class="agent-card agent-copywriter" id="agent-copywriter">
+            <div class="agent-sprite">
+              <svg viewBox="0 0 48 48" width="48" height="48" style="image-rendering:pixelated">
+                <rect x="12" y="2" width="24" height="20" fill="#f5c08a"/>
+                <rect x="16" y="8" width="4" height="4" fill="#222"/>
+                <rect x="28" y="8" width="4" height="4" fill="#222"/>
+                <rect x="18" y="16" width="12" height="2" fill="#c97"/>
+                <rect x="12" y="2" width="24" height="4" fill="#3f8ac5"/>
+                <rect x="10" y="24" width="28" height="18" fill="#3f8ac5"/>
+                <rect x="14" y="26" width="20" height="12" fill="#4f9ad5"/>
+                <rect x="20" y="24" width="8" height="4" fill="#f5c08a"/>
+              </svg>
+            </div>
+            <div class="agent-name">КОПИРАЙТЕР</div>
+            <div class="agent-role">Текст · Заголовки · CTA</div>
+            <div class="agent-monitor">
+              <div class="monitor-screen"><div class="monitor-dot"></div></div>
+            </div>
+            <div class="agent-status idle">ПРОСТОЙ</div>
+            <div class="agent-msg"></div>
+          </div>
+
+          <!-- Structurer -->
+          <div class="agent-card agent-structurer" id="agent-structurer">
+            <div class="agent-sprite">
+              <svg viewBox="0 0 48 48" width="48" height="48" style="image-rendering:pixelated">
+                <rect x="12" y="2" width="24" height="20" fill="#f5c08a"/>
+                <rect x="16" y="8" width="4" height="4" fill="#222"/>
+                <rect x="28" y="8" width="4" height="4" fill="#222"/>
+                <rect x="18" y="16" width="12" height="2" fill="#c97"/>
+                <rect x="12" y="2" width="24" height="4" fill="#c53f6c"/>
+                <rect x="10" y="24" width="28" height="18" fill="#c53f6c"/>
+                <rect x="14" y="26" width="20" height="12" fill="#d54f7c"/>
+                <rect x="20" y="24" width="8" height="4" fill="#f5c08a"/>
+              </svg>
+            </div>
+            <div class="agent-name">СТРУКТУРАТОР</div>
+            <div class="agent-role">Блоки Tilda</div>
+            <div class="agent-monitor">
+              <div class="monitor-screen"><div class="monitor-dot"></div></div>
+            </div>
+            <div class="agent-status idle">ПРОСТОЙ</div>
+            <div class="agent-msg"></div>
+          </div>
+
+          <!-- Finalizer -->
+          <div class="agent-card agent-finalizer" id="agent-finalizer">
+            <div class="agent-sprite">
+              <svg viewBox="0 0 48 48" width="48" height="48" style="image-rendering:pixelated">
+                <rect x="12" y="2" width="24" height="20" fill="#f5c08a"/>
+                <rect x="16" y="8" width="4" height="4" fill="#222"/>
+                <rect x="28" y="8" width="4" height="4" fill="#222"/>
+                <rect x="18" y="16" width="12" height="2" fill="#c97"/>
+                <rect x="12" y="2" width="24" height="4" fill="#3fc577"/>
+                <rect x="10" y="24" width="28" height="18" fill="#3fc577"/>
+                <rect x="14" y="26" width="20" height="12" fill="#4fd587"/>
+                <rect x="20" y="24" width="8" height="4" fill="#f5c08a"/>
+              </svg>
+            </div>
+            <div class="agent-name">ФИНАЛИЗАТОР</div>
+            <div class="agent-role">Сборка · Инструкция</div>
+            <div class="agent-monitor">
+              <div class="monitor-screen"><div class="monitor-dot"></div></div>
+            </div>
+            <div class="agent-status idle">ПРОСТОЙ</div>
+            <div class="agent-msg"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- SIDE PANEL -->
+    <div class="side-panel">
+
+      <!-- Task input -->
+      <div class="panel-section">
+        <div class="panel-title">► НОВАЯ ЗАДАЧА</div>
+        <div class="task-input-wrap">
+          <textarea
+            id="brief-input"
+            placeholder="Введи бриф на лендинг...&#10;&#10;Например: лендинг для студии йоги в Москве. Целевая аудитория — женщины 25-40 лет. Цель — запись на пробное занятие."
+          ></textarea>
+          <div style="font-size:6px;color:#555;font-family:monospace">Ctrl+Enter — отправить</div>
+          <button class="btn" id="send-btn">▶ ЗАПУСТИТЬ КОМАНДУ</button>
+        </div>
+      </div>
+
+      <!-- Tabs: log / result / history -->
+      <div class="tabs">
+        <div class="tab active" data-tab="log">ЛОГ</div>
+        <div class="tab" data-tab="result">РЕЗУЛЬТАТ</div>
+        <div class="tab" data-tab="history">ИСТОРИЯ</div>
+      </div>
+
+      <div class="tab-content active" id="tab-log">
+        <div class="log-wrap" id="log-wrap"></div>
+      </div>
+
+      <div class="tab-content" id="tab-result">
+        <div style="padding:12px;border-bottom:1px solid var(--border)">
+          <div class="result-actions">
+            <button class="btn-copy" id="copy-btn">КОПИРОВАТЬ</button>
+          </div>
+        </div>
+        <div style="flex:1;overflow-y:auto;padding:16px">
+          <pre class="result-content" id="result-content" style="font-size:9px;line-height:1.7;white-space:pre-wrap;color:#e0e0e0;font-family:monospace"></pre>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-history">
+        <div style="flex:1;overflow-y:auto;padding:16px">
+          <div class="history-list" id="history-list"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Status bar -->
+  <div class="statusbar">
+    <span><span class="status-dot" id="conn-dot"></span><span id="conn-label">ПОДКЛЮЧЕНИЕ...</span></span>
+    <span>АГЕНТОВ: 4</span>
+    <span>AI OFFICE v1.0</span>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
